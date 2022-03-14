@@ -1,4 +1,4 @@
-# react-animations with react-spring
+# React-animations with react-spring
 Using animations with react &amp; react-spring
 
 # Getting Started with Create React App
