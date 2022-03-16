@@ -1,9 +1,16 @@
 import React from 'react';
-import {useSpring, animated} from 'react-spring';
+import {useSpring, animated, config} from 'react-spring';
 
 const Checkout = ({ isOpen }) => {
   const { x } = useSpring({
     x: isOpen? 0 : 100,
+    config: config.wobbly,
+    // config: {
+    //   // duration: 5000,
+    //   config: config.molasses,
+    //   // tension: 400,
+    //   // friction: 200,
+    // }
   })
   // const animation = useSpring({
   //   transform: isOpen ? `translate3d(0,0,0)` : `translate3d(100%,0,0)` ,
