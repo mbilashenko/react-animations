@@ -6,7 +6,7 @@ import Modal from './Modal';
 import Checkout from './Checkout';
 import Accordion from './Accordion';
 import Waipoints from './Waypoints';
-import Gesture from './Gesture';
+import Boxes from './Boxes';
 import logo from './logo.svg';
 import './App.css';
 
@@ -24,7 +24,10 @@ const App = () => {
   console.log(fade);
 
   return (
-    <animated.div className="App" style={fade}>
+    <animated.div 
+      className="App" 
+      // style={fade}
+    >
       <header className="App-header">
         <img src={logo} className="logo" />
         <button 
@@ -38,7 +41,7 @@ const App = () => {
         <Modal />
         <Accordion />
         {/* <Waipoints /> */}
-        <Gesture />
+        <Boxes />
       </main>
       <Checkout isOpen = {isNavOpen} />
     </animated.div>
